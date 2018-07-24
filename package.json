@@ -1,0 +1,8 @@
+{
+  "name": "pdftk-lambda",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "https://github.com/unshift/pdftk-lambda.git",
+  "author": "Ben <menubar@protonmail.com>",
+  "license": "MIT"
+}
