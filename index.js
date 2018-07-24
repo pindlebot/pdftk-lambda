@@ -1,4 +1,4 @@
-const { PATH, LAMBDA_TASK_ROOT, LD_LIBRARY_PATH, PKG_CONFIG_PATH } = process.env
+const { PATH, LAMBDA_TASK_ROOT } = process.env
 
 const BIN = 'node_modules/pdftk-lambda/bin'
 
