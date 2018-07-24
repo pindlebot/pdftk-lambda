@@ -8,7 +8,7 @@ module.exports.version = () => {
       'pdftk --version',
       (error, stdout, stderr) => {
         if (error) reject(error)
-        else resolvee(stdout)
+        else resolve(stdout)
       }
     )
   })
