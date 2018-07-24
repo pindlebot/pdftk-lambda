@@ -1,6 +1,10 @@
-const { PATH, LAMBDA_TASK_ROOT } = process.env
-const path = require('path')
-process.env.PATH = PATH + ':' + path.resolve(LAMBDA_TASK_ROOT, __dirname, './lib')
+const { PATH, LAMBDA_TASK_ROOT, LD_LIBRARY_PATH, PKG_CONFIG_PATH } = process.env
+
+const BIN = 'node_modules/pdftk-lambda/bin'
+
+process.env.PATH = `${PATH}:${LAMBDA_TASK_ROOT}/${BIN}`
+process.env.LD_LIBRARY_PATH = `${LAMBDA_TASK_ROOT}/${BIN}`
+process.env.PKG_CONFIG_PATH = `${LAMBDA_TASK_ROOT}/${BIN}`
 
 module.exports.version = () => {
   return new Promise((resolve, reject) => {
